@@ -19,10 +19,10 @@ class Backer
    @@all_backers << self
   end
 
-  def self.create(title)
-    project = Project.new(title)
-    project.save
-    project
+  def self.create(name)
+    backer = Backer.new(name)
+    backer.save
+    backer
   end
 
    def back_project(title)
