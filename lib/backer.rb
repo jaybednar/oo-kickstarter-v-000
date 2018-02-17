@@ -14,8 +14,8 @@ class Backer
     if self.all.detect {|backer| backer.name == name}
       self.all.detect {|backer| backer.name == name}
     else
-      project = Backer.new(name)
-      project
+      backer = Backer.new(name)
+      backer
     end
   end
 
