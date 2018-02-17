@@ -1,8 +1,8 @@
 class Project
   attr_accessor :title, :backers
 
-  def initialize(project_title)
-    @title = project_name
+  def initialize(title)
+    @title = title
     @backers = []
   end
 
