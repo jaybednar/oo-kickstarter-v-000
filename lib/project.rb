@@ -36,11 +36,11 @@ class Project
   # def add_project(title)
 
 
-  def self.find_or_create(project)
-    if !self.all.detect {|project| project.title == title}
-      project = self.create(title)
-    else
-      self.all.detect {|project| project.title == title}
-    end
-  end
+  # def self.find_or_create(project)
+  #   if !self.all.detect {|project| project.title == title}
+  #     project = self.create(title)
+  #   else
+  #     self.all.detect {|project| project.title == title}
+  #   end
+  # end
 end
