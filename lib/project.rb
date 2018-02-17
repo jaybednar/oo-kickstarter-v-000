@@ -10,7 +10,7 @@ class Project
   def initialize(title)
     @title = title
     @backers = []
-    @@all_projects << self
+    
   end
 
   def save
