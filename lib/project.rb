@@ -18,8 +18,8 @@ class Project
   end
 
   def self.create(title)
-    backer = Backer.new(name)
-    bak.save
+    project = Project.new(title)
+    artist.save
     artist
   end
 
