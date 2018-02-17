@@ -7,7 +7,7 @@ class Backer
   end
 
   def back_project(title)
-    Project.find_or_create_by_name(name)
+    Project.find_or_create_by_title(title)
     @backed_projects << project
   end
 
