@@ -13,6 +13,16 @@ class Project
     @@all_projects << self
   end
 
+  def save
+   @@all_projects << self
+  end
+
+  def self.create(name)
+    artist = Artist.new(name)
+    artist.save
+    artist
+  end
+
   def backers
     @backers
   end
