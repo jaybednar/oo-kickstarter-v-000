@@ -20,7 +20,7 @@ class Project
   def self.create(title)
     project = Project.new(title)
     project.save
-    artist
+    project
   end
 
   def backers
