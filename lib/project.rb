@@ -14,7 +14,7 @@ class Project
   end
 
   def add_backer(name)
-    backer = Backer.find_or_create_by_name(name)
+    if !Backer.find_or_create_by_name(name)
     @backers << backer
   end
 
