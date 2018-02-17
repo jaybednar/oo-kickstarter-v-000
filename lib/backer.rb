@@ -7,7 +7,7 @@ class Backer
   end
 
   def back_project(title)
-    @backed_projects << project
+    self.find_or_create_by_title(title)
   end
 
   def self.find_or_create_by_name(name)
