@@ -12,7 +12,7 @@ class Backer
   def initialize(name)
     @name = name
     @backed_projects = []
-    
+
   end
 
   def save
@@ -30,7 +30,7 @@ class Backer
   end
 
    def back_project(project)
-    self.backed_projectst << Project.find_or_create_by_title
+    self.backed_project << Project.find_or_create_by_title
 
     # self.project.add_backer(self)
    end
