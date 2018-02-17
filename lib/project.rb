@@ -1,10 +1,10 @@
 class Project
   attr_accessor :title, :backers
 
-  @@all_projects = []
+  @@all = []
 
   def self.all
-    @@all_projects
+    @@all
   end
 
   def initialize(title)
@@ -14,7 +14,7 @@ class Project
   end
 
   def save
-   @@all_projects << self
+   @@all << self
   end
 
   def self.create(title)
