@@ -13,16 +13,6 @@ class Project
 
   end
 
-  def save
-   @@allp << self
-  end
-
-  def self.create(title)
-    project = Project.new(title)
-    project.save
-    project
-  end
-
   def backers
     @backers
   end
