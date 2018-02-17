@@ -18,10 +18,10 @@ class Project
   end
 
   def add_backer(backer)
-    backer = Backer.find_or_create_by_name(name)
-    self.backers.backed_projects << self
-    self.backers << backer 
-    else
+    # backer = Backer.find_or_create_by_name(name)
+    # self.backers.backed_projects << self
+    # self.backers << backer
+    # else
 
   end
 
