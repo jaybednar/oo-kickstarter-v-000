@@ -17,9 +17,9 @@ class Project
    @@all_projects << self
   end
 
-  def self.create(name)
+  def self.create(title)
     backer = Backer.new(name)
-    artist.save
+    bak.save
     artist
   end
 
