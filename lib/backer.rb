@@ -21,7 +21,7 @@ class Backer
     self.project.add_backer(self)
   end
 
-  def self.find_or_create(backer)
+  def self.find_or_create(name)
     if self.all.detect {|backer| backer.name == name}
       self.all.detect {|backer| backer.name == name}
     else
