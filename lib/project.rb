@@ -1,12 +1,6 @@
 class Project
   attr_accessor :title, :backers
 
-  @@allp = []
-
-  def self.all
-    @@allp
-  end
-
   def initialize(title)
     @title = title
     @backers = []
