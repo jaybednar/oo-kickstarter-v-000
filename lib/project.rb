@@ -39,7 +39,7 @@ class Project
     if self.all.detect {|project| project.title == title}
       self.all.detect {|project| project.title == title}
     else
-      project = Project.new(title)
+      project = self.create(title)
       project
     end
   end
