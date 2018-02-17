@@ -18,5 +18,9 @@ class Project
   end
 
   def self.find_or_create(title)
-    if !self.all.
+    if self.all.detect {|project| project.title == title}
+
+    else
+      project = Project.new(title)
+      project
 end
