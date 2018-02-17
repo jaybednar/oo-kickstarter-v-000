@@ -11,10 +11,10 @@ class Backer
   end
 
   def self.find_or_create_by_name(name)
-    if self.all.detect {|project| project.title == title}
-      self.all.detect {|project| project.title == title}
+    if self.all.detect {|backer| backer.name == name}
+      self.all.detect {|backer| backer.name == name}
     else
-      project = Project.new(title)
+      project = Backer.new(name)
       project
     end
   end
