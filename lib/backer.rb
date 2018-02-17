@@ -30,12 +30,12 @@ class Backer
   end
 
    def back_project(project)
-    self.backed_project << Project.find_or_create_by_title
+    self.backed_project << Project.find_or_create_by_title(project)
 
     # self.project.add_backer(self)
    end
 
-  def self.find_or_create_by_name(project)
+  def self.find_or_create_by_name(backer)
     if !self.all.detect {|backer| backer.name == name}
       backer = self.create(name)
     else
