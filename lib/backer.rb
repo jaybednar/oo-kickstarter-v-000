@@ -3,20 +3,20 @@ require 'pry'
 class Backer
   attr_accessor :name, :backed_projects, :project
 
-  @@all_backers = []
+  @@allb = []
 
   def self.all
-    @@all_backers
+    @@allb
   end
 
   def initialize(name)
     @name = name
     @backed_projects = []
-    @@all_backers << self
+    @@allb << self
   end
 
   def save
-   @@all_backers << self
+   @@allb << self
   end
 
   def backed_projects
@@ -30,7 +30,7 @@ class Backer
   end
 
    def back_project(project)
-    self.backed_projectst << Project.find_or_create_by_title 
+    self.backed_projectst << Project.find_or_create_by_title
 
     # self.project.add_backer(self)
    end
