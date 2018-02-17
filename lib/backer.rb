@@ -37,6 +37,7 @@ class Backer
 
   def self.find_or_create_by_name(backer)
     if !self.all.detect(backer)
+      binding.pry
       backer = self.create(name)
     else
       self.all.detect {|backer| backer.name == name}
