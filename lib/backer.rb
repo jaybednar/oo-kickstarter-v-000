@@ -15,6 +15,16 @@ class Backer
     @@all_backers << self
   end
 
+  def save
+   @@all_backers << self
+  end
+
+  def self.create(title)
+    project = Project.new(title)
+    project.save
+    project
+  end
+
    def back_project(title)
     self.project = Project.find_or_create_by_title(title)
 
