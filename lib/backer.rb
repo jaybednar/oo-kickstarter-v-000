@@ -16,19 +16,17 @@ class Backer
   end
 
    def back_project(title)
-    #  self.project = 
+    #  self.project =
      Project.find_or_create_by_title(title)
   #   # binding.pry
   #   self.project.add_backer(self)
    end
 
   def self.find_or_create(name)
-    if self.all.detect {|backer| backer.name == name}
-      self.all.detect {|backer| backer.name == name}
+    if !self.all.detect {|backer| backer.title == title}
+      backer = self.create(title)
     else
-      backer = Backer.new(name)
-      backer
-      binding.pry
+      self.all.detect {|backer| backer.title == title}
     end
   end
 
