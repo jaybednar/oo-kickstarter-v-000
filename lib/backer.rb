@@ -5,7 +5,7 @@ class Backer
 
   def self.all
     @@all_backers
-  end 
+  end
 
   def initialize(name)
     @name = name
@@ -13,8 +13,8 @@ class Backer
   end
 
   def back_project(title)
-    project = Project.find_or_create_by_title(title)
-    @backed_projects << project
+    self.project = Project.find_or_create_by_title(title)
+    self.project.backer = self 
   end
 
   def self.find_or_create_by_name(name)
