@@ -15,7 +15,7 @@ class Project
 
   def add_backer(name)
     self.backers = Backer.find_or_create_by_name(name)
-    self.backers.add_project(self)
+    self.backers = self 
     else
 
   end
