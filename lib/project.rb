@@ -3,6 +3,10 @@ class Project
 
   @@all_projects = []
 
+  def self.all 
+    @@all_projects
+  end 
+  
   def initialize(title)
     @title = title
     @backers = []
@@ -14,5 +18,5 @@ class Project
   end
 
   def self.find_or_create(project)
-    if !@
+    if !self.
 end
