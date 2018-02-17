@@ -25,7 +25,7 @@ class Backer
     backer
   end
 
-   def back_project(title)
+   def back_project(project)
     self.backed_projects = Project.find_or_create_by_title(title)
 
     # self.project.add_backer(self)
