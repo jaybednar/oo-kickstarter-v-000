@@ -10,6 +10,13 @@ class Backer
     @backed_projects << project
   end
 
-
+  def self.find_or_create_by_name(name)
+    if self.all.detect {|project| project.title == title}
+      self.all.detect {|project| project.title == title}
+    else
+      project = Project.new(title)
+      project
+    end
+  end
 
 end
