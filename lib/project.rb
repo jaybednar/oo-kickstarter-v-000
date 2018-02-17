@@ -23,5 +23,6 @@ class Project
     else
       project = Project.new(title)
       project
-    end 
+    end
+  end 
 end
