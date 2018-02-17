@@ -19,7 +19,7 @@ class Project
 
   def self.create(title)
     project = Project.new(title)
-    artist.save
+    project.save
     artist
   end
 
