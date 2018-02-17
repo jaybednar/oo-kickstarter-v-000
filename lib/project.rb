@@ -17,12 +17,12 @@ class Project
     @backers << backer
   end
 
-  def self.find_or_create(title)
+  def self.find_or_create_by_title(title)
     if self.all.detect {|project| project.title == title}
       self.all.detect {|project| project.title == title}
     else
       project = Project.new(title)
       project
     end
-  end 
+  end
 end
