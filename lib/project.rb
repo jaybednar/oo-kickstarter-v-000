@@ -31,8 +31,6 @@ class Project
     # backer = Backer.find_or_create_by_name(name)
     # self.backers.backed_projects << self
     # self.backers << backer
-    # else
-
   end
 
   def self.find_or_create_by_title(title)
