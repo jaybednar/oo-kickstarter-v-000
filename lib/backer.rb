@@ -23,10 +23,10 @@ class Backer
    end
 
   def self.find_or_create(name)
-    if !self.all.detect {|backer| backer.title == title}
-      backer = self.create(title)
+    if !self.all.detect {|backer| backer.name == name}
+      backer = self.create(name)
     else
-      self.all.detect {|backer| backer.title == title}
+      self.all.detect {|backer| backer.name == name}
     end
   end
 
