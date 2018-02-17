@@ -30,9 +30,8 @@ class Backer
   end
 
    def back_project(project)
-    self.backed_projects << Project.find_or_create(project)
-    self.find_or_create(backer)
-    # self.project.add_backer(self)
+    @backed_projects << project
+    
    end
 
   # def self.find_or_create(backer)
