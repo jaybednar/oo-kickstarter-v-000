@@ -18,7 +18,10 @@ class Backer
   def save
    @@all_backers << self
   end
-
+  
+  def backed_projects
+    @backed_projects
+  end
   def self.create(name)
     backer = Backer.new(name)
     backer.save
