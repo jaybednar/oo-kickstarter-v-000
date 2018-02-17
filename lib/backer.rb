@@ -35,7 +35,7 @@ class Backer
     # self.project.add_backer(self)
    end
 
-  def self.find_or_create_by_name(backer)
+  def self.find_or_create(backer)
     if !self.all.detect(backer)
       binding.pry
       backer = self.create(name)
