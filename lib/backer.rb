@@ -36,7 +36,7 @@ class Backer
    end
 
   def self.find_or_create_by_name(backer)
-    if !self.all.detect {|backer| backer.name == name}
+    if !self.all.detect(backer)
       backer = self.create(name)
     else
       self.all.detect {|backer| backer.name == name}
