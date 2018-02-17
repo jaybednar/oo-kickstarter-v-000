@@ -35,13 +35,13 @@ class Backer
     # self.project.add_backer(self)
    end
 
-  def self.find_or_create(backer)
-    if !self.all.detect(backer)
-      binding.pry
-      backer = self.create(name)
-    else
-      self.all.detect {|backer| backer.name == name}
-    end
-  end
+  # def self.find_or_create(backer)
+  #   if !self.all.detect(backer)
+  #     binding.pry
+  #     backer = self.create(name)
+  #   else
+  #     self.all.detect {|backer| backer.name == name}
+  #   end
+  # end
 
 end

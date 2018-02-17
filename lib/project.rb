@@ -28,9 +28,7 @@ class Project
   end
 
   def add_backer(name)
-    backer = Backer.find_or_create(name)
 
-    # self.backers << backer
   end
 
   # def add_project(title)
