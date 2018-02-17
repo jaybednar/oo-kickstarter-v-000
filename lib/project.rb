@@ -6,13 +6,13 @@ class Project
   def initialize(title)
     @title = title
     @backers = []
-    @@all_projects << self 
+    @@all_projects << self
   end
 
   def add_backer(backer)
     @backers << backer
   end
 
-  def find_or_create(project)
-    if !@backers
+  def self.find_or_create(project)
+    if !@
 end
