@@ -36,11 +36,10 @@ class Project
   end
 
   def self.find_or_create_by_title(title)
-    if self.all.detect {|project| project.title == title}
-      self.all.detect {|project| project.title == title}
-    else
+    if !self.all.detect {|project| project.title == title}
       project = self.create(title)
-      project
+    else
+      self.all.detect {|project| project.title == title}
     end
   end
 end
