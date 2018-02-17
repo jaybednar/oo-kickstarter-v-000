@@ -10,7 +10,7 @@ class Project
   def initialize(title)
     @title = title
     @backers = []
-    
+
   end
 
   def save
@@ -18,7 +18,7 @@ class Project
   end
 
   def self.create(name)
-    artist = Artist.new(name)
+    backer = Backer.new(name)
     artist.save
     artist
   end
