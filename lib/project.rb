@@ -13,8 +13,8 @@ class Project
     @@all_projects << self
   end
 
-  def backers 
-    @backers 
+  def backers
+    @backers
   end 
 
   def add_backer(name)
